@@ -14,9 +14,9 @@ public class VendingMachineOfHotDrinks implements VendingMachine<CupOfTea> {
 
     public void getProductsList() {
         System.out.println(" Hot Drinks List ");
-        System.out.println("| Name |" + "\t" + "| Volume |" + "\t" + "| Temp |");
+        System.out.println("| Name |" + "\t" + "| Volume |" + " " + "| Temp |");
         for (CupOfTea cupOfTea : cupOfTeaList) {
-            System.out.printf(cupOfTea.getName(), cupOfTea.getVolume(), cupOfTea.getTemperature());
+            System.out.printf("%s\t\t%s\t\t%s\n", cupOfTea.getName(), cupOfTea.getVolume(), cupOfTea.getTemperature());
         }
     }
 

@@ -16,9 +16,9 @@ public class CupOfTea extends HotDrink {
 
     @Override
     public String toString() {
-        return "CupOfTea{" +
+        return "cup of Tea {" +
                 "name = " + name +
-                ", volume = '" + volume + '\'' +
+                ", volume = " + volume +
                 ", temperature = " + temperature +
                 '}';
     }

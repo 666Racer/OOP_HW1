@@ -12,9 +12,9 @@ public class Main {
 //        Product sprite = new Product("Sprite", 12); //добавляем новый продукт
 //        Product fanta = new Product("Fanta", 15); //добавляем новый продукт
 //        Product pepsi = new Product("Pepsi", 14); //добавляем новый продукт
-        CupOfTea cupOfTea1 = new CupOfTea("cup of Tea1",200, 90);
-        CupOfTea cupOfTea2 = new CupOfTea("cup of Tea2",300, 80);
-        CupOfTea cupOfTea3 = new CupOfTea("cup of Tea3",200, 80);
+        CupOfTea cupOfTea1 = new CupOfTea("cup of Tea 1",200, 90);
+        CupOfTea cupOfTea2 = new CupOfTea("cup of Tea 2",300, 80);
+        CupOfTea cupOfTea3 = new CupOfTea("cup of Tea 3",200, 80);
         //List<Product> prodList = new ArrayList<>(List.of(bottleOfCola, pieceOfCheese));
         List<CupOfTea> teaList = new ArrayList<>(List.of(cupOfTea1, cupOfTea2, cupOfTea3));
 
@@ -27,7 +27,8 @@ public class Main {
 //        vendingMachine.printProduct("pieceOfCheese"); //поиск продукта по названию (имени)
         VendingMachineOfHotDrinks vendingMachineOfHotDrinks = new VendingMachineOfHotDrinks();
         vendingMachineOfHotDrinks.addProducts(teaList);
-        vendingMachineOfHotDrinks.getProduct("cupOfTea2", 300, 80);
-        vendingMachineOfHotDrinks.getProduct("cupOfTea2", 200, 80);
+        System.out.println();
+        vendingMachineOfHotDrinks.getProduct("cup of Tea 2", 300, 80);
+        vendingMachineOfHotDrinks.getProduct("cup of Tea 2", 200, 80);
     }
 }
